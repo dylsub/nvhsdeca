@@ -8,7 +8,7 @@ if (currentWindow == "index.html") {
             navTabs[i].classList.add("nav__active");
         }
     }
-} else if (currentWindow == "calendar.html") {
+} else if (currentWindow == "club.html") {
     for (let i = 0; i < navTabs.length; i++) {
         if (navTabs[i].dataset.tab == 1) {
             navTabs[i].classList.add("nav__active");
