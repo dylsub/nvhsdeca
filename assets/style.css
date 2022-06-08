@@ -54,10 +54,29 @@ h2 { font-weight: 300; }
 /**********************************/
 /**********************************/
 
-.nav__logo img {
+.nav__logo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.nav__logo a img {
     width: auto;
     height: 45px;
-    margin-top: 3px;
+}
+.sticky__nav .nav__logo a img {
+    width: auto;
+    height: 35px;
+}
+.nav__logo a h1 {
+    margin-left: 20px;
+    margin-right: 200px;
+    font-weight: 500;
+    color: rgb(0, 81, 156);
+    font-family: "Ubuntu";
+}
+.nav__logo:hover {
+    filter: brightness(1.25);
 }
 .nav {
     margin-top: 20px;
@@ -83,21 +102,10 @@ h2 { font-weight: 300; }
     overflow-x: hidden;
 }
 .sticky__nav h1 { font-size: 25px; }
-.sticky__nav img {
-    height: 35px;
-    margin-top: 5px;
-}
 .nav__links {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.nav h1 {
-    margin-left: 20px;
-    margin-right: 200px;
-    font-weight: 500;
-    color: rgb(0, 81, 156);
-    font-family: "Ubuntu";
 }
 .nav__link {
     margin-left: 20px;
@@ -247,7 +255,6 @@ h2 { font-weight: 300; }
     align-items: center;
     flex-direction: row-reverse;
     background: rgb(240, 240, 240);
-    padding-bottom: 150px;
 }
 .mission h1 {
     margin-bottom: 0px;
@@ -275,10 +282,10 @@ h2 { font-weight: 300; }
 /**********************************/
 
 .overview {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     width: 100vw;
-    background: rgb(240, 240, 240);
+    background: rgb(250, 250, 250);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,7 +379,7 @@ h2 { font-weight: 300; }
 /**********************************/
 /**********************************/
 
-.background__end { height: 150px; }
+.background__end { height: 200px; }
 .footer {
     width: 100vw;
     height: 40px;
@@ -423,7 +430,7 @@ h2 { font-weight: 300; }
     align-items: center;
     padding-top: 50px;
     width: 100vw;
-    background: #fff;
+    background: rgb(250,250,250);
 }
 
 .meetings h1, .announcements h1{
@@ -445,7 +452,7 @@ h2 { font-weight: 300; }
     background: rgb(220, 220, 220);
     margin: 0 15px 30px 15px;
     border-radius: 0px 0px 25px 0px;
-    box-shadow: 5px 5px 1px;
+    box-shadow: 5px 5px 25px;
 }
 
 .meeting__row {
