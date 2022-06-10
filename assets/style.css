@@ -54,6 +54,9 @@ h2 { font-weight: 300; }
 /**********************************/
 /**********************************/
 
+.nav__logo {
+    margin-right: 200px;
+}
 .nav__logo a{
     display: flex;
     align-items: center;
@@ -70,7 +73,6 @@ h2 { font-weight: 300; }
 }
 .nav__logo a h1 {
     margin-left: 20px;
-    margin-right: 200px;
     font-weight: 500;
     color: rgb(0, 81, 156);
     font-family: "Ubuntu";
@@ -455,12 +457,17 @@ h2 { font-weight: 300; }
     box-shadow: 5px 5px 25px;
 }
 
-.meeting__row {
+.meetings__slides {
+    display: flex;
+    flex-direction: column;
+}
+
+.meetings__row {
     display: flex;
     align-items: center;
 }
 
-.meeting__row:last-of-type {
+.meetings__row:last-of-type {
     margin-bottom: 100px;
 }
 
