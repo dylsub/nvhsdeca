@@ -14,7 +14,14 @@ if (currentWindow == "index.html") {
             navTabs[i].classList.add("nav__active");
         }
     }
+} else if (currentWindow == "resources.html") {
+    for (let i = 0; i < navTabs.length; i++) {
+        if (navTabs[i].dataset.tab == 2) {
+            navTabs[i].classList.add("nav__active");
+        }
+    }
 }
+
 
 //website loop
 let websiteLoop = setInterval(() => {
