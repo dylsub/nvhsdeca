@@ -255,26 +255,27 @@ h2 { font-weight: 300; }
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row-reverse;
     background: rgb(240, 240, 240);
 }
-.mission h1 {
-    margin-bottom: 0px;
-    font-size: 30px;
-    text-align: center;
-    color: rgb(5, 50, 93);
-    font-weight: 500;
-    width: auto;
-    background-color: white;
+.mission div {
+    width: 33.3334vw;
+    height: 24.02vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.mission h2 {
-    text-align: right;
-    width: 750px;
-}
-.mission img {
-    width: 100vw;
+
+.mission div img {
+    filter: brightness(1.1);
+    width: 33.3334vw;
     height: auto;
-    /* box-shadow: 10px 10px 25px; */
+}
+.mission div img:hover {
+    transition: 0.5s;
+    width: 35vw;
+    height: auto;
+    filter: brightness(1.55);
 }
 
 /**********************************/
@@ -381,7 +382,10 @@ h2 { font-weight: 300; }
 /**********************************/
 /**********************************/
 
-.background__end { height: 200px; }
+.background__end { 
+    height: 200px; 
+    margin-top: 0;
+}
 .footer {
     width: 100vw;
     height: 40px;
@@ -507,16 +511,21 @@ h2 { font-weight: 300; }
     width: 350px;
     height: 260px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .meeting img {
     width: 350px;
     height: auto;
-    transition: 0.1s;
+    transition: filter 0.1s;
+    transition: width 0.3s;
 }
 
 .meeting img:hover {
-    filter: brightness(0.75);
+    width: 370px;
+    filter: brightness(1.25);
 }
 
 /**********************************/
