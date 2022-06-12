@@ -6,6 +6,22 @@
 //Meeting objects
 //////////////////////////////////////////////////////////
 
+//HOW TO ADD A MEETING
+//1) Copy this: 
+/* 
+    {
+        link: "",
+        image: "",
+        title: "",
+        description: "",
+    },
+*/
+//2) Fill out the information for the new meeting insidse the ""
+//3) For the image, take a screenshot of the title slide and save it into the img folder
+//4) put the file path into the image property: "assets/img/imagefile"
+
+///////////////////////////////////////////////////////////
+
 const meetings = [
     {
         link: "https://docs.google.com/presentation/d/1U5RDkDRVb8AV6i9SMeYNh4zvuuUELOumPxrzFnfTyh8/edit?usp=sharing",
